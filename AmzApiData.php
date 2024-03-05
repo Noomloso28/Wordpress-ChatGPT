@@ -3,7 +3,7 @@ namespace ChateGPT;
 
 class AmzApiData
 {
-	CONST SECRET_KEY = 'BxjuTVD5L805Kyjh6FDyUkn4kIHJH2E88CR3uAY+';
+	CONST SECRET_KEY = 'SECRET_KEY';
 	public function eap_api_make_product_request($asin)
 	{
 		$method = 'GET';
@@ -62,6 +62,7 @@ class AmzApiData
 
 		return $signature;
 	}
+	
 	private function eap_curl_get_content($url){
 		/*$curl = curl_init($url);
 		curl_setopt($curl, CURLOPT_FAILONERROR, true);

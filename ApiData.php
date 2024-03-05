@@ -184,7 +184,7 @@ class ApiData
 	}
 	private function slaveGetData($prompt = '')
 	{
-		$apiKey = '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';
+		$apiKey = 'apiKey';
 		$config = $this->getConfigs();
 
 		$maxTokens = (int) $config['MaxTokens'];
@@ -227,7 +227,7 @@ class ApiData
 	public function getImageApi($prompt = '')
 	{
 //		$prompt = 'healthy fat loss';
-		$apiKey = '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';
+		$apiKey = 'apiKey';
 
 //        return Cache::remember(self::PREFIX . '_image', 60 * 60 * 24, function ($prompt) {
 		try {
